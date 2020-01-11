@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.News.NewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TvCricket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="6dp"
+            android:background="@color/colorTitleHeader"
+            android:text="Latest from Cricket"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TvCricketView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="8dp"
+            android:text="View all >"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvNews_Cricket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvCricket" />
+
+        <TextView
+            android:id="@+id/TvSoccer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RvNews_Cricket"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="6dp"
+            android:text="Latest from Soccer"
+            android:background="@color/colorTitleHeader"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TvSoccerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RvNews_Cricket"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="8dp"
+            android:text="View all >"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvNews_Soccer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvSoccer" />
+
+        <TextView
+            android:id="@+id/TvTennis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RvNews_Soccer"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="6dp"
+            android:text="Latest from Tennis"
+            android:background="@color/colorTitleHeader"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TvTennisView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RvNews_Soccer"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="8dp"
+            android:text="View all >"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvNews_Tennis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvTennis" />
+
+    </RelativeLayout>
+
+</ScrollView>

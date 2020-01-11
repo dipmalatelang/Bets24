@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.More.ContactUsActivity">
+
+    <include
+        android:id="@+id/Tbcontact"
+        layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tbcontact"
+        android:layout_margin="5dp"
+        android:background="@color/colorPanel"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/TV_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Contact Us!"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:layout_below="@+id/TV_text"
+            android:visibility="gone"
+            android:textColor="@color/colorRed"/>
+
+        <TextView
+            android:id="@+id/TvFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvStatus"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Name"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/Et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvFullName"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Your Name"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/TvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Et_Name"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="E-Mail"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/Et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvEmail"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Your E-Mail"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/TvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Et_Email"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Message"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/ET_Feedback"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/TvMessage"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="start"
+            android:hint="Type Your Message Here..."
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ET_Feedback"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:text="Submit"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/TvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Note : Our Support Team is available 24 / 7"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

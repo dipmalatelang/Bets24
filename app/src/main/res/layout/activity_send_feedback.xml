@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.More.SendFeedbackActivity">
+
+    <include
+        android:id="@+id/TbFeedback"
+        layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TbFeedback"
+        android:layout_margin="5dp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPanel">
+
+        <TextView
+            android:id="@+id/TvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textColor="@color/colorRed"/>
+
+        <TextView
+            android:id="@+id/TvFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvStatus"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorWhite"
+            android:text="Name"/>
+
+        <EditText
+            android:id="@+id/Et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvFullName"
+            android:textColor="@android:color/black"
+            android:hint="Your Name"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:drawable/editbox_background"/>
+
+
+        <TextView
+            android:id="@+id/TvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Et_Name"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:text="E-Mail"/>
+
+
+        <EditText
+            android:id="@+id/Et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvEmail"
+            android:textColor="@android:color/black"
+            android:hint="Your E-Mail"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:id="@+id/TV_textappname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Et_Email"
+            android:text="How Easy is it to use Sky Live Line?"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"/>
+
+        <RatingBar
+            android:id="@+id/Rb_Stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_textappname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/TvRecommand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rb_Stars"
+            android:text="Would you recommend us to others?"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorWhite" />
+
+        <RadioGroup
+            android:id="@+id/Rg_Suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvRecommand"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:checkedButton="@id/Yes"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/colorWhite" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvfeeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rg_Suggest"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Any Feedback or Suggestions? ( Optional )"/>
+
+        <EditText
+            android:id="@+id/Et_Feedback"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tvfeeds"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="start"
+            android:hint="Type here..."
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Et_Feedback"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:text="Submit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:layout_below="@+id/Btn_Submit"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Note : Your Valueable Feedbacks and Suggestions help us to provide a better user expirence."
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

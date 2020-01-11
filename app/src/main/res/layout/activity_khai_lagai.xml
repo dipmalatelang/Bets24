@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.More.KhaiLagai.KhaiLagaiActivity">
+
+    <include
+        android:id="@+id/TbApp"
+        layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/TV_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KHAI LAGAI CALCULATOR"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/TbApp"/>
+
+    <EditText
+        android:id="@+id/ET_enterfirstteam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColorHint="#000"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/TV_calculator"
+        android:hint="Enter First Team"/>
+
+    <TextView
+        android:id="@+id/TV_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="VS"
+        android:textSize="16sp"
+        android:layout_below="@+id/ET_enterfirstteam"
+        android:textColor="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/ET_entersecondteam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:textColorHint="#000"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/TV_vs"
+        android:hint="Enter Send Team"/>
+
+    <Button
+        android:id="@+id/BTN_playkhailagai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLAY KHAILAGAI"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/ET_entersecondteam"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/BTN_playsession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLAY session"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/BTN_playkhailagai"/>
+
+    <Button
+        android:id="@+id/BTN_savematch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BTN_playsession"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="save matches"
+        android:textSize="16sp" />
+
+</RelativeLayout>

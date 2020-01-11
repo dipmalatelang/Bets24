@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_favourites"
+            android:title="Favourites"
+            android:icon="@drawable/ic_fav"/>
+
+        <item
+            android:id="@+id/nav_fixture"
+            android:icon="@drawable/ic_fixtures"
+            android:title="Fixtures" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="News" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="Settings" />
+    </group>
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.News.AllNewsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:title="News"/>
+
+    <LinearLayout
+        android:id="@+id/TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Toolbar">
+
+        <TextView
+            android:id="@+id/TvCricket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_margin="0.5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/TvSoccer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soccer"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_margin="0.5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/TvTennis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tennis"
+            android:padding="12dp"
+            android:layout_margin="0.5dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitleBar"/>
+
+</RelativeLayout>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InplayMatchInfo.InplayActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Iv_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/btn_green_bg"
+            android:src="@drawable/ic_tv"/>
+
+        <Button
+            android:id="@+id/Btn_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:text="Score"
+            android:textColor="@color/colorGreyBackgroundText"
+            android:background="@drawable/btn_green_bg"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/Btn_MatchOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:text="Match Odds"
+            android:textColor="@color/colorGreyBackgroundText"
+            android:background="@drawable/btn_green_bg"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/Btn_Fancy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorGreyBackgroundText"
+            android:background="@drawable/btn_green_bg"
+            android:text="Fancy"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/LinearLayout1"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WebView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RlMatchScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/RL_Cricket_Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cricket_bg"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/Tv_Team1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Team1Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Team1"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Team1Wicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Team1"
+                        android:layout_toRightOf="@+id/Tv_Team1Score"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/Iv_ScoreCard"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_scorecard"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Team2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Team2Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Team2"
+                        android:text=""
+                        android:layout_toStartOf="@+id/Tv_Team2Wicket"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Team2Wicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Team2"
+                        android:text=""
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Team2Wicket"
+                        android:layout_alignParentBottom="true">
+
+                        <TextView
+                            android:id="@+id/Tv_Player1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/Tv_Over"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:text="Over"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_OverValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Over"
+                            android:layout_alignParentBottom="true"
+                            android:text=" "
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_Ball_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_toEndOf="@+id/Tv_Over"
+                            android:layout_toRightOf="@+id/Tv_Over"
+                            android:text="Ball Number"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_Ball_no_Value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Over"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/Tv_Over"
+                            android:layout_toRightOf="@+id/Tv_Over"
+                            android:text=" "
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/Tv_Player2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/Tv_Player2Run"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:text="Runs"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_Player2RunsValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Player2Run"
+                            android:layout_alignParentBottom="true"
+                            android:text=" "
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_Tennis_Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tennis_bg"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/Tv_Tennis_Team1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Tennis_Team1Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Tennis_Team1"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Set : "
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_SetValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/Tv_Set"
+                        android:text=" "
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Tennis_Team2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Tennis_Team2Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/Tv_Tennis_Team2"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true">
+
+                        <TextView
+                            android:id="@+id/Tv_Tennis_Player1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:id="@+id/Tv_Tennis_Player2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="@android:color/white"
+                            android:layout_below="@+id/Tv_Tennis_Player1" />
+
+                        <View
+                            android:id="@+id/View1"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/Tv_Team1_Set1"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/Tv_Team1_Set1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/View2"
+                            android:text=" "
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:id="@+id/Tv_Team2_Set1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Team1_Set1"
+                            android:layout_toStartOf="@+id/View2"
+                            android:text=" "
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@android:color/white"/>
+
+                        <View
+                            android:id="@+id/View2"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/Tv_Team1_Set2"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/Tv_Team1_Set2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/View3"
+                            android:text=" "
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:id="@+id/Tv_Team2_Set2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Team1_Set2"
+                            android:layout_toStartOf="@+id/View3"
+                            android:text=" "
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@android:color/white"/>
+
+                        <View
+                            android:id="@+id/View3"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/Tv_Team1_Set3"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/Tv_Team1_Set3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text=" "
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:id="@+id/Tv_Team2_Set3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Team1_Set3"
+                            android:layout_alignParentEnd="true"
+                            android:text=" "
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@android:color/white"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_Soccer_Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:background="@drawable/soccer_bg">
+
+                    <TextView
+                        android:id="@+id/Tv_Soccer_Team1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Soccer_Team1Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Soccer_Team1"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Soccer_Team2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Soccer_Team2Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/Tv_Soccer_Team2"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_MatchOdds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RlMatchScore"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LL_Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffcccccc"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="Back"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="Lay"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Rv_MatchOddView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_Session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_MatchOdds"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LL_SessionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffcccccc"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Session Runs"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="No"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Rv_SessionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

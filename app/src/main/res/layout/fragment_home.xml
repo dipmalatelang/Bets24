@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.Home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/LLHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LLCricket"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPanel"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_cricket" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Cricket"
+                android:textAlignment="center"
+                android:textColor="@color/colorGreyBackgroundText"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LLSoccer"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPanel"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_soccer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Soccer"
+                android:textAlignment="center"
+                android:textColor="@color/colorGreyBackgroundText"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LLTennis"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPanel"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_tennis" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Tennis"
+                android:textAlignment="center"
+                android:textColor="@color/colorGreyBackgroundText"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TvFeaturedMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLHead"
+        android:background="@color/colorTitleHeader"
+        android:padding="6dp"
+        android:text="Today Matches"
+        android:textColor="@color/colorWhite"
+        android:elevation="5dp"
+        tools:targetApi="lollipop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_Featured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvFeaturedMatch"/>
+
+    <TextView
+        android:id="@+id/TvInplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rv_Featured"
+        android:background="@color/colorTitleHeader"
+        android:padding="6dp"
+        android:text="LIVE IN-PLAY"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/TvViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/Rv_Featured"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="View all In-Play"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_Liveinplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvInplay"
+        tools:listitem="@layout/layout_inplay"/>
+
+</RelativeLayout>

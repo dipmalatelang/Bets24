@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.Favourites.FavouritesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/TvNodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Records Found!"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/colorGreyText"
+        android:fontFamily="serif"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

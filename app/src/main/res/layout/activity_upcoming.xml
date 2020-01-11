@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpcomingMatchInfo.UpcomingActivity">
+
+    <include
+        android:id="@+id/IncAppBar"
+        layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/TvMatchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IncAppBar"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPanel"
+        android:padding="3dp"
+        android:text="India Vs Australia"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/TvSportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport Name : Soccer"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:textSize="13sp"
+        android:layout_below="@+id/TvMatchName"
+        android:textColor="@color/colorGreyBackgroundText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : Upcoming"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/TvMatchName"
+        android:textSize="13sp"
+        android:textColor="@color/colorGreyBackgroundText"/>
+
+    <TextView
+        android:id="@+id/MatchOdds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvSportName"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_matchodds"
+        android:gravity="center_vertical"
+        android:text="Match Odds"
+        android:padding="2dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/LL_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MatchOdds"
+        android:background="#ffcccccc"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Lay"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_MatchOdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TvMatchTime"
+        android:layout_below="@+id/LL_Header"
+        tools:listitem="@layout/layout_match_odds" />
+
+    <TextView
+        android:id="@+id/TvMatchTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPanel"
+        android:padding="5dp"
+        android:text="Match Will be Live Today by 01:00 Pm"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

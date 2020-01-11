@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "209774981666",
+    "firebase_url": "https://skyliveline-8a149.firebaseio.com",
+    "project_id": "skyliveline-8a149",
+    "storage_bucket": "skyliveline-8a149.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209774981666:android:4123965edb53c33c44d07b",
+        "android_client_info": {
+          "package_name": "com.app.bet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209774981666-fllk9veofc6v1toi5cnpq739qft9qa9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bet",
+            "certificate_hash": "9e5546198b66fab4c79da02ea55e0bf8a8cef90c"
+          }
+        },
+        {
+          "client_id": "209774981666-rohkut8v2ju2i3lhj577a4h7la1fi77c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6aX6ROJfJeMjAtyeWI0dBetyNAplgUCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209774981666-rohkut8v2ju2i3lhj577a4h7la1fi77c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

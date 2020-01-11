@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvAdminMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvAdminMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_admin_msg"
+            android:drawableLeft="@drawable/ic_admin_msg"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Admin Messages"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvKhaLagai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        android:layout_below="@id/CvAdminMsg"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvKhaLagai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_khailagai"
+            android:drawableLeft="@drawable/ic_khailagai"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Khai Lagai Calculator"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvKhaLagai"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:drawableStart="@drawable/ic_privacypolicy"
+            android:drawableLeft="@drawable/ic_privacypolicy"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Privacy Policy"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvTermsCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvPrivacyPolicy"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvTermsCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_termscondition"
+            android:drawableLeft="@drawable/ic_termscondition"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Terms &amp; Conditions"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvSendFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvTermsCondition"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvSendFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_feedback"
+            android:drawableLeft="@drawable/ic_feedback"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Send Feedback"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvShareApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvSendFeedback"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvShareApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_shareapp"
+            android:drawableLeft="@drawable/ic_shareapp"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Share App"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvRateUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvShareApp"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvRateUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_rateus"
+            android:drawableLeft="@drawable/ic_rateus"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Rate Us"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvRateUs"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_contactus"
+            android:drawableLeft="@drawable/ic_contactus"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Contact Us"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvContactUs"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_help"
+            android:drawableLeft="@drawable/ic_help"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Help"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvHelp"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_about"
+            android:drawableLeft="@drawable/ic_about"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="About"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CvAbout"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/colorOddsBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/TvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawableEnd="@drawable/ic_nav_right"
+            android:drawableRight="@drawable/ic_nav_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Logout"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

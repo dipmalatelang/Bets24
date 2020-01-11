@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CvNews"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/colorPanel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/IvThumbNail"
+            android:layout_width="160dp"
+            android:layout_height="95dp"
+            android:background="@android:drawable/dialog_frame"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/TvTitile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/IvThumbNail"
+            android:layout_toRightOf="@id/IvThumbNail"
+            android:text="News Titile"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorGreyBackgroundText" />
+
+        <TextView
+            android:id="@+id/TvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvTitile"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/IvThumbNail"
+            android:layout_toRightOf="@id/IvThumbNail"
+            android:text="News Titile"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorGreyText"
+            android:layout_marginStart="-5dp"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableLeft="@drawable/ic_pubtime"
+            android:layout_marginLeft="-5dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

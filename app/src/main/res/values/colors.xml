@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#14755E</color>
+    <color name="colorPrimaryDark">#00463C</color>
+    <color name="colorAccent">#FFDF1B</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorGreyBackgroundText">#ddd</color>
+    <color name="colorGreyText">#B4B4B4</color>
+    <color name="colorBackground">#474747</color>
+    <color name="colorTournamentHead">#C0C0C0</color>
+    <color name="colorOddsBackground">#585858</color>
+    <color name="colorTitleHeader">#157A62</color>
+    <color name="colorPanel">#555555</color>
+    <color name="colorPanelBottom">#666</color>
+    <color name="colorRed">#FC2727</color>
+    <color name="colorGreen">#1FB313</color>
+    <color name="colorBlue">#7FA1F3</color>
+    <color name="color_back">#add8e6</color>
+    <color name="color_lay">#ffcccb</color>
+    <color name="button_pressed">#B4008577</color>
+</resources>
