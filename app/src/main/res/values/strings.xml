@@ -2,8 +2,16 @@
     <string name="app_name">SkyLiveLine</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="register">sign Up</string>
+    <string name="singup">Sign Up</string>
     <string name="Login">Login</string>
+    <string name="register">Registration</string>
+    <string name="add_phone">Verify your phone number</string>
+    <string name="phone_verify">Please confirm your country code and enter your phone number</string>
+    <string name="verify">Enter the code that was send to</string>
+    <string name="gmail_login">Login with Gmail</string>
+    <string name="resend_code"><u>Resend Code</u></string>
+    <string name="phone_login">Login with Phone</string>
+    <string name="Reset_password">By clicking RESET ,you will receive an email to reset your password</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

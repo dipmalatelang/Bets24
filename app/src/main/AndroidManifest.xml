@@ -3,6 +3,7 @@
     package="com.app.bet">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UpcomingMatchInfo.UpcomingActivity"></activity>
+        <activity android:name=".Login.ResetPassword"></activity>
+        <activity android:name=".Login.VerifyPhoneActivity" />
+        <activity android:name=".Login.PhoneActivity" />
+        <activity android:name=".Login.Registration" />
+        <activity android:name=".UpcomingMatchInfo.UpcomingActivity" />
         <activity android:name=".InplayMatchInfo.InplayActivity" />
         <activity android:name=".Soccer.SoccerActivity" />
         <activity android:name=".HomeScreen.More.KhaiLagai.KhaiLagaiActivity" />
@@ -26,18 +31,21 @@
         <activity android:name=".HomeScreen.More.HelpActivity" />
         <activity android:name=".HomeScreen.News.AllNewsActivity" />
         <activity android:name=".HomeScreen.More.PrivacyTermsActivity" />
-        <activity android:name=".Login.LoginActivity" >
+        <activity android:name=".Login.SplashScreenActivity"
+            android:theme="@style/SplashTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login.LoginActivity"></activity>
+        <activity android:name=".HomeScreen.HomeScreenActivity" />
 
-
-        <activity android:name=".HomeScreen.HomeScreenActivity">
-
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

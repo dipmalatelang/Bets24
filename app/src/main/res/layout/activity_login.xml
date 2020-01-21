@@ -22,9 +22,21 @@
         android:background="#33FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            android:transitionName="imgLogo"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_login_text"
@@ -103,7 +115,7 @@
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="32dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/ripple_primary_color"
             android:drawableStart="@drawable/ic_verified_user_white_24dp"
@@ -116,29 +128,71 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInput_password" />
 
-        <TextView
-            android:id="@+id/btn_phone_login"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ripple_primary_color"
-            android:drawableStart="@drawable/ic_phone_android_white_24dp"
 
+        <TextView
+            android:id="@+id/btn_phonelogin"
+            android:layout_width="58dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_phone_android_white_24dp"
             android:gravity="center_vertical"
             android:padding="2dp"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
-            android:text="Login with Phone"
             android:textAlignment="center"
             android:textColor="@drawable/color_white_to_black"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn_login"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_gmaillogin"
+            app:layout_constraintTop_toBottomOf="@+id/link_forgetPassword"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:id="@+id/btn_gmaillogin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/google"
+            android:padding="2dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="center"
+            android:textColor="@drawable/color_white_to_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_phonelogin"
+            app:layout_constraintEnd_toStartOf="@+id/btn_phonelogin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_phonelogin"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_In_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="252dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/tv_rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"
+            android:text="Remember me"
+            android:textColor="@drawable/color_white_to_black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/link_forgetPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
         <TextView
             android:id="@+id/link_forgetPassword"
@@ -152,7 +206,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.849"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_phone_login" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
         <TextView
             android:id="@+id/txt_singup"
@@ -177,8 +231,8 @@
             android:layout_marginBottom="36dp"
             android:fontFamily="sans-serif-smallcaps"
             android:gravity="center"
-            android:text="@string/register"
-            android:textColor="@color/colorWhite"
+            android:text="@string/singup"
+            android:textColor="@drawable/color_white_to_black"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
